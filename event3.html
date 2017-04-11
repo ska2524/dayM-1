@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'</title>
+</head>
+<body>
+<ul id="list">
+
+    <li>AA</li>
+    <li>bb</li>
+    <li>cc</li>
+
+</ul>
+
+<script>
+    document.querySelector("#list").addEventListener("click", function (event) {
+        console.log(event.srcElement)
+    },false)
+
+    //약점이 있다!!! 뭔가?
+
+</script>
+</body>
+</html>

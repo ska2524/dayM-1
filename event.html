@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="target">AAAAAAAAAAAAAAAAAAAAAA</div>
+
+<script>
+
+    function  foo() {
+        alert(this.innerHTML);
+    }
+
+     document.querySelector("#target").addEventListener("click", foo); //target의 foo
+
+    foo(); //window.foo
+
+</script>
+
+<!--1. 함수를 빼서 실행하면 this의 의미가 바뀐다.-->
+<!--2. 전역변수를 되도록이면 안쓰려고함.-->
+<!--익명함수를 쓰는것은 당연한거다.-->
+</body>
+</html>
